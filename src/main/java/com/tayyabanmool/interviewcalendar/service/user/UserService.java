@@ -1,6 +1,6 @@
 package com.tayyabanmool.interviewcalendar.service.user;
 
-import com.tayyabanmool.interviewcalendar.dto.UserDto;
+import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 
 /**
  * Service Interface for managing {@link com.tayyabanmool.interviewcalendar.entity.User} entity.

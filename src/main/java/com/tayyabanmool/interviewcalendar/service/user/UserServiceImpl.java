@@ -1,6 +1,6 @@
 package com.tayyabanmool.interviewcalendar.service.user;
 
-import com.tayyabanmool.interviewcalendar.dto.UserDto;
+import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 import com.tayyabanmool.interviewcalendar.entity.User;
 import com.tayyabanmool.interviewcalendar.repository.UserRepository;
 import org.slf4j.Logger;

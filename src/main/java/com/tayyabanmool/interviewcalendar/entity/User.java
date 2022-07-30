@@ -1,10 +1,12 @@
 package com.tayyabanmool.interviewcalendar.entity;
 
-import com.tayyabanmool.interviewcalendar.dto.UserDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 import com.tayyabanmool.interviewcalendar.enums.UserRole;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * A User.
@@ -21,6 +23,10 @@ public class User {
     private String name;
 
     private UserRole userRole;
+
+    @OneToMany(mappedBy = "user", cascade=CascadeType.ALL)
+    @JsonIgnore
+    private List<Availability> availabilityList;
 
     public UserDto getDto(){
         UserDto userDto = new UserDto();

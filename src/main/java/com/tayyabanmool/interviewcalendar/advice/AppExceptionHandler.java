@@ -1,5 +1,6 @@
 package com.tayyabanmool.interviewcalendar.advice;
 
+import com.tayyabanmool.interviewcalendar.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,5 +21,11 @@ public class AppExceptionHandler {
             errorMap.put(error.getField(), error.getDefaultMessage());
         });
         return errorMap;
+    }
+
+    @ExceptionHandler(UserNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    String userNotFoundHandler(UserNotFoundException ex) {
+        return ex.getMessage();
     }
 }

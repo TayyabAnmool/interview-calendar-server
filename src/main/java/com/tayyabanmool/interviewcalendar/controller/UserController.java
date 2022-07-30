@@ -1,6 +1,6 @@
 package com.tayyabanmool.interviewcalendar.controller;
 
-import com.tayyabanmool.interviewcalendar.dto.UserDto;
+import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 import com.tayyabanmool.interviewcalendar.service.user.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.net.URI;
 
 /**
  * REST controller for managing {@link com.tayyabanmool.interviewcalendar.entity.User}.

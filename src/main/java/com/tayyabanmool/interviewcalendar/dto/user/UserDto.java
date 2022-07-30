@@ -1,4 +1,4 @@
-package com.tayyabanmool.interviewcalendar.dto;
+package com.tayyabanmool.interviewcalendar.dto.user;
 
 import com.tayyabanmool.interviewcalendar.enums.UserRole;
 import lombok.Data;
