@@ -3,7 +3,9 @@ package com.tayyabanmool.interviewcalendar.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 import com.tayyabanmool.interviewcalendar.enums.UserRole;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,6 +16,8 @@ import java.util.List;
 @Entity
 @Table(name = "user")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id

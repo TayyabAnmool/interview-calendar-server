@@ -6,6 +6,9 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+/**
+ * A DTO for the check availability search.
+ */
 @Data
 public class CheckAvailabilityRequestDto {
 

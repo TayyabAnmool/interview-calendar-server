@@ -24,7 +24,7 @@ public class AvailabilityController {
      * {@code Put  /api/availability} : Add a new Availability slot.
      *
      * @param availabilityDto the availabilityDto to add.
-     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new availabilityDto, or with status {@code 400 (Bad Request)} if the provided information is in invalid format or incomplete, or with status {@code 500 (Not Found)} if unable to add for unknown reason.
+     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new availabilityDto, or with status {@code 406 (NOT_ACCEPTABLE)} if the provided information is in invalid format or incomplete.
      */
     @PutMapping("")
     public ResponseEntity<?> createOrUpdateAvailabilitySlot(@Valid @RequestBody AvailabilityDto availabilityDto) {
@@ -41,19 +41,14 @@ public class AvailabilityController {
     }
 
     /**
-     * {@code Get  /api/availability} : Add a new Availability slot.
+     * {@code Get  /api/availability/check} : Add a new Availability slot.
      *
-     * @param checkAvailabilityRequestDto the availabilityDto to add.
-     * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new availabilityDto, or with status {@code 400 (Bad Request)} if the provided information is in invalid format or incomplete, or with status {@code 500 (Not Found)} if unable to add for unknown reason.
+     * @param checkAvailabilityRequestDto for candidate id and interviewers ids.
+     * @return the {@link ResponseEntity} with status {@code 200 (Ok)} and with body the new CheckAvailabilityResponseDto
      */
-    @GetMapping("")
+    @PostMapping("check")
     public ResponseEntity<?> checkAvailabilitySlot(@Valid @RequestBody CheckAvailabilityRequestDto checkAvailabilityRequestDto) {
-
-//        AvailabilityDto result = availabilityService.createOrUpdateAvailabilitySlot(availabilityDto);
-//        if (result == null) {
-//            return new ResponseEntity<>("Some Thing Went Wrong", HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-
-        return new ResponseEntity<>(availabilityService.checkAvailabilitySlot(checkAvailabilityRequestDto),HttpStatus.CREATED);
+        return new ResponseEntity<>(availabilityService.
+                checkAvailabilitySlot(checkAvailabilityRequestDto),HttpStatus.OK);
     }
 }

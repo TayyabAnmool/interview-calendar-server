@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * A DTO for the {@link com.tayyabanmool.interviewcalendar.entity.Availability} entity.
+ */
 @Data
 @AllArgsConstructor
 public class AvailabilitySlotDto {
