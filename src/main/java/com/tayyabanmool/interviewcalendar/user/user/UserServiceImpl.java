@@ -1,4 +1,4 @@
-package com.tayyabanmool.interviewcalendar.service.user;
+package com.tayyabanmool.interviewcalendar.user.user;
 
 import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
 import com.tayyabanmool.interviewcalendar.entity.User;

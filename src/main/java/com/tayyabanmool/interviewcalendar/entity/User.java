@@ -32,6 +32,9 @@ public class User {
     @JsonIgnore
     private List<Availability> availabilityList;
 
+    public User(long l, String karim, UserRole candidate) {
+    }
+
     public UserDto getDto(){
         UserDto userDto = new UserDto();
         userDto.setId(id);

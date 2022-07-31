@@ -1,4 +1,4 @@
-package com.tayyabanmool.interviewcalendar.service.availability;
+package com.tayyabanmool.interviewcalendar.user.availability;
 
 import com.tayyabanmool.interviewcalendar.dto.availability.AvailabilityDto;
 import com.tayyabanmool.interviewcalendar.dto.availability.CheckAvailabilityRequestDto;

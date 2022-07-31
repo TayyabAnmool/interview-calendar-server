@@ -2,7 +2,7 @@ package com.tayyabanmool.interviewcalendar.controller;
 
 import com.tayyabanmool.interviewcalendar.dto.availability.AvailabilityDto;
 import com.tayyabanmool.interviewcalendar.dto.availability.CheckAvailabilityRequestDto;
-import com.tayyabanmool.interviewcalendar.service.availability.AvailabilityService;
+import com.tayyabanmool.interviewcalendar.user.availability.AvailabilityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

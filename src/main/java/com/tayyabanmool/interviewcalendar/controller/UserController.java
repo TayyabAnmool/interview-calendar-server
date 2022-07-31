@@ -1,7 +1,7 @@
 package com.tayyabanmool.interviewcalendar.controller;
 
 import com.tayyabanmool.interviewcalendar.dto.user.UserDto;
-import com.tayyabanmool.interviewcalendar.service.user.UserService;
+import com.tayyabanmool.interviewcalendar.user.user.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
